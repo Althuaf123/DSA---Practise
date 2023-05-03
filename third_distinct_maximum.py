@@ -5,7 +5,7 @@ def third_distinct(arr):
     second_largest = float('-inf')
     third_largest = float('-inf')
 
-    for i in range(len(arr)):
+    for i in range(1,len(arr)):
         if arr[i] > largest:
             third_largest = second_largest
             second_largest = largest
@@ -22,5 +22,5 @@ def third_distinct(arr):
     else:
         return largest
 
-arr = [2,3,1,5,2,7,8,6,9,1,2]    
+arr = [2,3,1,5,2,7,6,9,1,2]    
 print(third_distinct(arr))
